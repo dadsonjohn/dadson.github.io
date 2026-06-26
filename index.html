@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy 19th Birthday, Abena 🎂</title>
+
+  <!-- Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400;0,600;1,400&family=Sacramento&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Libraries (all CDN, no install needed) -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" defer></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js" defer></script>
+
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ░░ AURORA CANVAS ░░ -->
+
+<canvas id="auroraCanvas"></canvas>
+
+  <!-- ░░ FLOATING ORBS ░░ -->
+
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <!-- ░░ MUSIC BUTTON ░░ -->
+
+  <button class="music-btn" id="musicBtn" aria-label="Toggle music">
+    <svg id="musicIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M9 18V5l12-2v13"/>
+      <circle cx="6" cy="18" r="3"/>
+      <circle cx="18" cy="16" r="3"/>
+    </svg>
+  </button>
+
+  <!-- ══════════════════════════════════════
+       SECTION 1 — HERO
+  ══════════════════════════════════════ -->
+
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+
+```
+  <p class="hero-eyebrow">✦ A very special day ✦</p>
+
+  <div class="neon-number" id="neonNumber">
+    <span class="n-digit">1</span><span class="n-digit">9</span>
+  </div>
+
+  <h1 class="hero-name">Abena</h1>
+  <p class="hero-tagline">Nineteen looks incredibly good on you.</p>
+
+  <div class="hero-cta">
+    <a href="#letter" class="cta-btn">Read Your Letter</a>
+  </div>
+
+</div>
+
+<!-- Hero image strip -->
+<div class="hero-strip">
+  <div class="strip-img" style="--d:0s">
+    <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=400&h=600&fit=crop&q=80" alt="Birthday balloons"/>
+    <span class="strip-label">Your Day ✨</span>
+  </div>
+  <div class="strip-img" style="--d:.15s">
+    <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=400&h=600&fit=crop&q=80" alt="Cake"/>
+    <span class="strip-label">Sweet 19 🎂</span>
+  </div>
+  <div class="strip-img" style="--d:.3s">
+    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=600&fit=crop&q=80" alt="Celebration"/>
+    <span class="strip-label">Celebrate 🥂</span>
+  </div>
+  <div class="strip-img" style="--d:.45s">
+    <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?w=400&h=600&fit=crop&q=80" alt="Gold confetti"/>
+    <span class="strip-label">Gold & Glow ✦</span>
+  </div>
+</div>
+
+<div class="scroll-hint">
+  <span>scroll</span>
+  <div class="scroll-line"></div>
+</div>
+```
+
+  </section>
+
+  <!-- ══════════════════════════════════════
+       SECTION 2 — GALLERY MOSAIC
+  ══════════════════════════════════════ -->
+
+  <section class="mosaic-section" id="mosaic">
+    <div class="section-label">✦ Beautiful moments ✦</div>
+    <h2 class="mosaic-title">Here's to <em>you</em></h2>
+
+```
+<div class="mosaic-grid">
+  <div class="mosaic-item m-tall reveal">
+    <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=700&h=1000&fit=crop&q=80" alt="">
+    <div class="mosaic-overlay"><p>She shines wherever she goes</p></div>
+  </div>
+  <div class="mosaic-item reveal" style="--delay:.1s">
+    <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=700&h=500&fit=crop&q=80" alt="">
+    <div class="mosaic-overlay"><p>Every laugh, a memory</p></div>
+  </div>
+  <div class="mosaic-item reveal" style="--delay:.2s">
+    <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=700&h=500&fit=crop&q=80" alt="">
+    <div class="mosaic-overlay"><p>Born to celebrate</p></div>
+  </div>
+  <div class="mosaic-item m-wide reveal" style="--delay:.3s">
+    <img src="https://images.unsplash.com/photo-1467810563316-b5476525c0f9?w=1200&h=600&fit=crop&q=80" alt="">
+    <div class="mosaic-overlay"><p>The world is yours at 19</p></div>
+  </div>
+  <div class="mosaic-item reveal" style="--delay:.4s">
+    <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?w=700&h=500&fit=crop&q=80" alt="">
+    <div class="mosaic-overlay"><p>Pure joy</p></div>
+  </div>
+</div>
+```
+
+  </section>
+
+  <!-- ══════════════════════════════════════
+       SECTION 3 — LETTER
+  ══════════════════════════════════════ -->
+
+  <section class="letter-section" id="letter">
+    <div class="letter-wrap reveal">
+      <div class="letter-stamp">✦ 19 ✦</div>
+      <div class="letter-card">
+        <p class="letter-date">A letter for your 19th birthday</p>
+        <h2 class="letter-salutation">Dear Abena,</h2>
+
+```
+    <div class="letter-body">
+      <p>Nineteen years ago, the world became a little brighter — because you entered it. And every year since, you've only added more light, more laughter, and more life to everyone lucky enough to know you.</p>
+
+      <p>There's something remarkable about the way you move through the world. With grace, with fire, with a warmth that makes people feel seen. You carry so much strength in you — the kind that doesn't announce itself, it just shows up when it matters.</p>
+
+      <p>At 19, you stand at the most beautiful beginning. Not the beginning of your story — that's been unfolding for years — but the beginning of the chapter where <em>you</em> get to write every word. Where your dreams stop being dreams and start becoming decisions.</p>
+
+      <p>So here's my wish for you: May every door that deserves to be open, open for you. May every hard day remind you how resilient you already are. May your smile never shrink for anyone's comfort. And may this year be the most joyful, most expansive, most <em>you</em> year yet.</p>
+
+      <p>Happy 19th birthday, Abena. You deserve every single celebration this day brings.</p>
+    </div>
+
+    <p class="letter-close">With all the love in the world,</p>
+    <p class="letter-sig">John Dadson 💛</p>
+  </div>
+</div>
+```
+
+  </section>
+
+  <!-- ══════════════════════════════════════
+       SECTION 4 — TIMELINE / 19 REASONS
+  ══════════════════════════════════════ -->
+
+  <section class="reasons-section" id="reasons">
+    <div class="section-label">✦ just because ✦</div>
+    <h2 class="reasons-title">19 things that make<br><span>Abena</span> extraordinary</h2>
+
+```
+<div class="reasons-grid">
+  <div class="reason-card reveal" style="--delay:0s"><span class="r-num">01</span><p>Her smile that lights up a room the moment she walks in</p></div>
+  <div class="reason-card reveal" style="--delay:.05s"><span class="r-num">02</span><p>The way her laugh makes everyone around her laugh too</p></div>
+  <div class="reason-card reveal" style="--delay:.1s"><span class="r-num">03</span><p>Her quiet strength in the moments that matter most</p></div>
+  <div class="reason-card reveal" style="--delay:.15s"><span class="r-num">04</span><p>How genuinely she cares about the people she loves</p></div>
+  <div class="reason-card reveal" style="--delay:.2s"><span class="r-num">05</span><p>The dreams she carries with fearless, unapologetic ambition</p></div>
+  <div class="reason-card reveal" style="--delay:.25s"><span class="r-num">06</span><p>Her kindness — effortless and real, never performed</p></div>
+  <div class="reason-card reveal" style="--delay:.3s"><span class="r-num">07</span><p>The way she faces hard things with grace and resilience</p></div>
+  <div class="reason-card reveal" style="--delay:.35s"><span class="r-num">08</span><p>Her curiosity that makes every conversation interesting</p></div>
+  <div class="reason-card reveal" style="--delay:.4s"><span class="r-num">09</span><p>That beautiful spirit that is entirely and wonderfully her own</p></div>
+  <div class="reason-card reveal" style="--delay:.45s"><span class="r-num">10</span><p>How she makes ordinary moments feel worth remembering</p></div>
+  <div class="reason-card reveal" style="--delay:.5s"><span class="r-num">11</span><p>Her sense of humor — perfectly timed, always sharp</p></div>
+  <div class="reason-card reveal" style="--delay:.55s"><span class="r-num">12</span><p>The loyalty she shows the people she calls her own</p></div>
+  <div class="reason-card reveal" style="--delay:.6s"><span class="r-num">13</span><p>Her brilliance — that she sometimes doesn't even notice in herself</p></div>
+  <div class="reason-card reveal" style="--delay:.65s"><span class="r-num">14</span><p>The energy she brings that somehow lifts the whole room</p></div>
+  <div class="reason-card reveal" style="--delay:.7s"><span class="r-num">15</span><p>The way she shows up — fully, warmly, honestly</p></div>
+  <div class="reason-card reveal" style="--delay:.75s"><span class="r-num">16</span><p>Her taste — in music, in life, in everything that matters</p></div>
+  <div class="reason-card reveal" style="--delay:.8s"><span class="r-num">17</span><p>The future she's building — one brave choice at a time</p></div>
+  <div class="reason-card reveal" style="--delay:.85s"><span class="r-num">18</span><p>The way she makes the people around her feel loved</p></div>
+  <div class="reason-card reveal golden-card" style="--delay:.9s"><span class="r-num">19</span><p>Simply for being exactly who she is — that's more than enough</p></div>
+</div>
+```
+
+  </section>
+
+  <!-- ══════════════════════════════════════
+       SECTION 5 — CLOSING / CAKE
+  ══════════════════════════════════════ -->
+
+  <section class="finale-section" id="finale">
+    <div class="finale-images">
+      <div class="fin-img reveal"><img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=600&h=800&fit=crop&q=80" alt="Birthday cake"/></div>
+      <div class="fin-img reveal" style="--delay:.15s"><img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=800&fit=crop&q=80" alt="Champagne"/></div>
+      <div class="fin-img reveal" style="--delay:.3s"><img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?w=600&h=800&fit=crop&q=80" alt="Confetti"/></div>
+    </div>
+
+```
+<div class="finale-text">
+  <p class="fin-eyebrow">✦ forever yours ✦</p>
+  <h2 class="fin-title">Happy Birthday,<br><span>Abena.</span></h2>
+  <p class="fin-sub">May 19 be the start of your most extraordinary year yet.</p>
+
+  <button class="celebrate-btn" id="celebrateBtn">
+    🎉 Celebrate!
+  </button>
+</div>
+```
+
+  </section>
+
+  <!-- ░░ FOOTER ░░ -->
+
+  <footer class="footer">
+    <p>Made with 💛 by <strong>John Dadson</strong> — just for Abena</p>
+    <p class="footer-sub">19 and absolutely radiant ✦</p>
+  </footer>
+
+  <audio id="bgMusic" loop>
+    <source src="https://cdn.pixabay.com/audio/2022/05/27/audio_1808fbf07a.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
